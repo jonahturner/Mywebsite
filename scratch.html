@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Skills | Jonah Turner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .page-header { background: #1a3a32; color: white; padding: 60px 0; }
+        .viz-container { 
+            background: white; 
+            padding: 15px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            margin-top: -30px; 
+        }
+        tableau-viz {
+            width: 100%;
+            height: 900px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Jonah Turner</a>
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="resume.html">Résumé</a>
+            <a class="nav-link active" href="scratch.html">Tableau Skills</a>
+            <a class="nav-link" href="WebApp.html">Game</a>
+        </div>
+    </div>
+</nav>
+
+<header class="page-header text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Tableau Data Visualization</h1>
+        <p class="lead">Interactive Golf Ball Comparison Tool</p>
+    </div>
+</header>
+
+<div class="container my-5">
+    <div class="viz-container">
+        <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+        <tableau-viz id="tableauViz" 
+            src="https://public.tableau.com/views/MyGolfSpyBallLabGolfBallComparisonTool/COMPARISONTOOL" 
+            toolbar="bottom" 
+            hide-tabs>
+        </tableau-viz>
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container"><small>&copy; 2026 Jonah Turner</small></div>
+</footer>
+
+</body>
+</html>
